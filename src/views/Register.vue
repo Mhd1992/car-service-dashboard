@@ -1,37 +1,31 @@
 <template>
     <div class="Register">
       <h1>This is an Register page</h1>
-      <div class="container">
-        <div class="card">
-          <div class="card-header">  <h3>Sign In</h3></div>
-          <div class="card-content">
-            <form>
-          
+      <div class="container myform">
+        <form>
+  <!-- Email input -->
+  <div class="form-outline mb-4">
+    <input type="email" id="form2Example1" placeholder="username" class="form-control" />
+  </div>
 
-            <div class="form-group">
-                <label>Email address</label>
-                <input type="email" class="form-control form-control-lg" />
-            </div>
+  <!-- phone input -->
+  <div class="form-outline mb-4">
+    <input type="phone" id="form2Example2" placeholder="phone" class="form-control" />
+  </div>
 
-            <div class="form-group">
-                <label>Password</label>
-                <input type="password" class="form-control form-control-lg" />
-            </div>
+  <!-- Password input -->
+  <div class="form-outline mb-4">
+    <input type="password" id="form2Example2" placeholder="password" class="form-control" />
+  </div>
 
-            <div class="form-group">
-                <label>Phone</label>
-                <input type="phone" class="form-control form-control-lg" />
-            </div>
-        </form>
-          </div>
-          <div class="card-footer">
-            <button type="submit" class="btn btn-dark btn-lg btn-block">Sign In</button>
 
-<p class="forgot-password text-right mt-2 mb-4">
-    <router-link to="/forgot-password">Forgot password ?</router-link>
-</p>
-          </div>
-        </div>
+
+  <!-- Submit button -->
+  <button type="button" class="btn btn-primary btn-block mb-4">Sign in</button>
+
+  <!-- Register buttons -->
+
+</form>
 
     </div>
  
@@ -47,5 +41,8 @@
   padding: 40px 55px 45px 55px;
   border-radius: 15px;
   transition: all .3s;
+}
+.myform{
+width: 250px;
 }
   </style>
